@@ -5,7 +5,7 @@ const SavedItem = props=>
         <Message isColor={"success"} key={props.title}>
             <MessageHeader>
                 <p>{props.title}</p>
-                <Delete onClick={()=>alert("deleted")}/>
+                <Delete onClick={props.delete}/>
             </MessageHeader>
             <MessageBody>
                 {props.notes}

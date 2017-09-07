@@ -14,7 +14,7 @@ class DisplayPage extends Component {
             <Container>
             {tabs.filter(ele=>ele===this.props.openTab).map(ele=>{
                 if(ele === "Search"){
-                    return <Search {...this.props} key={"searchField"}/>
+                    return <Search {...this.props} addSearchResultsToState={this.props.addSearchResultsToState} key={"searchField"}/>
                 } else if(ele === "Results"){
                     return <Results {...this.props} key={"resultsField"}/>
                 }else if(ele === "Saved"){
