@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const apiRoutes = require("./routes/apiRoute")
 mongoose.Promise = Promise;
 
-mongoose.connect("mongodb://heroku_8d4dj4zf:hqh2hkmk5iujf9u1uepa3mkrfc@ds127034.mlab.com:27034/heroku_8d4dj4zf");
+mongoose.connect("mongodb://localhost/nytarticletest");
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }));
 
